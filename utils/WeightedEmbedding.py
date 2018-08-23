@@ -24,6 +24,9 @@ class WeightedEmbedding(nn.Module):
     # todo: formalize weight initialization strategy.
     # todo: vectorize tensor count function.
     # todo: more `weight_mode` options (inverse proportion weighting only current option).
+    # todo: tests:
+    #   - cuda in/out
+    #   - numpy version
 
     def __init__(self, n, embedding_size, weight_mode='frequency'):
         super(WeightedEmbedding, self).__init__()

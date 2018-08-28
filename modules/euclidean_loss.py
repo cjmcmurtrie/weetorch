@@ -27,5 +27,3 @@ class EuclideanLoss(torch.nn.Module):
         dist = self.euclidean(inp, target)
         loss = dist.sum() / dist.size(0)
         return loss
-
-
